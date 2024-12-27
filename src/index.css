@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&family=Montserrat:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  font-family: "DM Sans", sans-serif;
+  @apply text-gray-500;
+  list-style-type: none;
+}
