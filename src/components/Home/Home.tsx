@@ -26,7 +26,7 @@ export const Home = ({ setSelectedPage }: Props) => {
                 <img src={HomePageText} alt="home-page-text" />
               </div>
             </div>
-            <p className="w-full sm:w-[100%] md:w-3/5 mt-8 text-sm">
+            <p className="w-full  md-only:w-3/5 mt-8 text-sm ">
               Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
               Studios to get the Body Shapes That you Dream of.. Get Your Dream
               Body Now.
@@ -47,15 +47,15 @@ export const Home = ({ setSelectedPage }: Props) => {
           </div>
         </div>
         {/* image */}
-        <div>
+        <div className="flex basis-3/5 justify-center z-10 md:ml-40 md:mt-16 md:justify-items-end">
           <img src={HomePageGraphic} alt="home-page-graphic" />
         </div>
       </div>
       {/* Sponsors */}
       {isAboveMediumScreens && (
-        <div>
-          <div>
-            <div>
+        <div className="h-[150px] w-full bg-primary-100 py-10">
+          <div className="mx-auto w-5/6">
+            <div className="flex w-3/5 items-center justify-between gap-8">
               <img src={SponsorRedBull} alt="red-bull-sponsor" />
               <img src={SponsorForbes} alt="forbes-sponsor" />
               <img src={SponsorFortune} alt="fortune-sponsor" />

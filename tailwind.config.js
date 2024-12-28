@@ -34,6 +34,7 @@ module.exports = {
       xs: "480px",
       sm: "768px",
       md: "1060px",
+      "md-only": { min: "768px", max: "1060px" },
     },
   },
   plugins: [],
