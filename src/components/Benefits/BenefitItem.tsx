@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { SelectedPage } from "../../shared/types";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { LearnMore } from "../../shared/LearnMore";
 type Props = {
   icon: ReactNode;

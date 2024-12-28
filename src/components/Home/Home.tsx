@@ -6,7 +6,6 @@ import HomePageGraphic from "../../assets/HomePageGraphic.webp";
 import SponsorForbes from "../../assets/SponsorForbes.webp";
 import SponsorFortune from "../../assets/SponsorFortune.webp";
 import SponsorRedBull from "../../assets/SponsorRedBull.webp";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 import { LearnMore } from "../../shared/LearnMore";
 type Props = {
@@ -62,8 +61,8 @@ export const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               Join now
             </ActionButton>
-            
-            <LearnMore setSelectedPage={setSelectedPage}/>
+
+            <LearnMore setSelectedPage={setSelectedPage} />
 
             {/* <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"

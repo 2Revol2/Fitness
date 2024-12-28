@@ -59,7 +59,7 @@ export const Benefits = ({ setSelectedPage }: Props) => {
             />;
           })}
         </div>
-      </motion.div>
+      </motion.div>g
     </section>
   );
 };
