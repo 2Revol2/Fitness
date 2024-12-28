@@ -22,7 +22,9 @@ export const Navbar = ({
   const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
   return (
     <header>
-      <nav className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}>
+      <nav
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+      >
         <div className={`${flexBetween} m-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* left side */}

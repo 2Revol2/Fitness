@@ -8,7 +8,7 @@ import SponsorFortune from "../../assets/SponsorFortune.webp";
 import SponsorRedBull from "../../assets/SponsorRedBull.webp";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
-
+import { LearnMore } from "../../shared/LearnMore";
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
@@ -16,10 +16,11 @@ export const Home = ({ setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
   return (
-    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md: pb-0">
+    <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* Image and main header */}
-      <motion.div className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
-      onViewportEnter={()=> setSelectedPage(SelectedPage.Home)}
+      <motion.div
+        className="md:flex mx-auto w-5/6 items-center justify-center md:h-5/6"
+        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
       >
         {/* main header */}
         <div className="z-10 mt-32 md:basis-3/5">
@@ -52,7 +53,7 @@ export const Home = ({ setSelectedPage }: Props) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            transition={{delay: 0.2, duration: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
             variants={{
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
@@ -61,13 +62,16 @@ export const Home = ({ setSelectedPage }: Props) => {
             <ActionButton setSelectedPage={setSelectedPage}>
               Join now
             </ActionButton>
-            <AnchorLink
+            
+            <LearnMore setSelectedPage={setSelectedPage}/>
+
+            {/* <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
               onClick={() => setSelectedPage(SelectedPage.ContactUs)}
               href={`#${SelectedPage.ContactUs}`}
             >
               <p>Learn More</p>
-            </AnchorLink>
+            </AnchorLink> */}
           </motion.div>
         </div>
         {/* image */}
